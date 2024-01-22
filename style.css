@@ -10,7 +10,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
+/* 
 .logo h1 {
   z-index: 9999;
   position: absolute;
@@ -43,11 +43,44 @@ body {
   margin-top: 20px;
   width: 550px;
   margin-left: 80px;
+} */
+
+.logo_header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.logo_header h1{
+  margin-left: 10px;
+}
+.logo_header ul {
+  display: flex;
+  flex-direction: row;
+ list-style: none;
+}
+.logo_header ul li{
+  margin-right: 90px;
+}
+.logo_header ul li:hover{
+  cursor: pointer;
+}
+
+.header {
+  background-color: #1f2937;
+  color: white;
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+
 
 .main {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 1500px;
   margin-top: 50px;
 }
@@ -55,6 +88,7 @@ body {
   font-size: 48px;
   font-weight: bold;
   margin-top: 1px;
+  color: #f9faf8;
   font-family: Roboto-Bold;
 }
 .main .hero_secondary {
@@ -90,59 +124,92 @@ body {
   background-color: #3882f6;
 }
 
+
+
 .content {
   position: absolute;
-  top: 300px;
+  top: 400px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
 }
 .content .content_items {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  width: auto;
 }
 img {
-  height: 100px;
-  width: 100px;
+  height: 180px;
+  width: auto;
 }
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px; 
+}
+
 .content > h1 {
   text-align: center;
 }
-.content > p {
+
+
+
+.quote_section{
+margin-top: 10px;
   background-color: #e5e7eb;
-  font-size: 36px;
+  font-size: 25px;
   color: #1f2937;
   padding: 70px;
   width: 800px;
-  margin-left: 140px;
+
 }
 .sign {
-  width: 600px;
-  height: 75px;
+  width: 650px;
+  height: 80px;
   background-color: #3882f6;
   border-radius: 5px;
   color: white;
-  margin-left: 350px;
-  display: flex;
+  padding-left: 10px;
 }
+
 .sign button {
   background-color: #3882f6;
   color: white;
-  border: 1px solid white;
+  border: none;
   border-radius: 5px;
   width: 75px;
   height: 40px;
   padding: 4px;
-  margin: 20px 5px 10px 90px;
+  margin: 10px 10px;
+  transition: all 0.3s ease-in-out;
+}
+.sign button:hover {
+  transform: scale(1.1);
+}
+.sign button:hover{
+  cursor: pointer;
+
 }
 
 footer {
   width: 100%;
   height: 50px;
   position: absolute;
-  top: 1000px;
+  top: 1400px;
   text-align: center;
   background-color: #1f2937;
   color: white;
 }
+
+
 footer > p {
   padding: 10px;
   margin-top: auto;
